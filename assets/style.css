@@ -1,0 +1,75 @@
+/*Colores de los mains de todas las paginas*/
+.fondo-home {
+    /* Color para index.html */
+    background-color: #e6f5ff !important; 
+}
+
+.fondo-trabajar {
+    /* Color para trabajar.html */
+    background-color: #ffcef0 !important;
+}
+
+.fondo-acercade {
+    /* Color para acercade.html */
+    background-color: #fff3db !important;
+}
+
+.fondo-clientes {
+    /* Color para clientes.html */
+    background-color: #ffffff !important;
+}
+/*----------------------------------------------*/
+
+/*Color de fondo de los H1*/
+h1 {
+    color: #1f3b5fa1 !important;
+}
+
+h2 {
+        color: #10435ab0 !important;
+
+}
+/*----------------------------------------------*/
+
+
+/*Esta seccion es para cambiar el color de una imagen vector que sirve de fondo*/
+#superpocision {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+}
+
+#rayas {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+#Gatitonro3 {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    z-index: 2; 
+}
+/*----------------------------------------------*/
+
+/*Esta seccion es para superponer imagen con un texto*/
+
+#vectoradm {
+    width: 120%; 
+    height: auto; 
+    display: block; 
+    margin-left: -15%;    
+    position: relative; 
+    z-index: 1; 
+}
+
+#row #col1 {
+    position: relative; 
+    z-index: 3; /* El texto tendrá un z-index menor (1) que la imagen (2) */
+}
