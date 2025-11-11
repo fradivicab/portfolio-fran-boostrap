@@ -5,6 +5,11 @@ El formato se basa en "Keep a Changelog", y este proyecto adhiere al versionado 
 
 ## [Desarrollo - coderh-4] - 2025-11-11
 
+### Corregido (Fixed)
+- Corregida paths de las redirecciones de paginas
+
+## [Desarrollo - coderh-4] - 2025-11-11
+
 ### Añadido (Added)
 - Nuevas imagenes de apple y de asuncion
 
