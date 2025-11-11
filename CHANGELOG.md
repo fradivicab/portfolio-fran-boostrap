@@ -3,6 +3,18 @@
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato se basa en "Keep a Changelog", y este proyecto adhiere al versionado semántico.
 
+## [Desarrollo - coderh-4] - 2025-11-11
+
+### Añadido (Added)
+- Nuevas imagenes de apple y de asuncion
+
+### Cambiado (Changed)
+- Refactorización de todas las paginas html buscando usar fuentes modernas y bootstrap
+
+### Corregido (Fixed)
+- Corregida la ortografia de algunos puntos
+
+
 ## [Desarrollo - coderh-2] - 2025-11-10
 
 ### Añadido (Added)
