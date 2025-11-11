@@ -1,4 +1,4 @@
-/* Estilos Personalizados para Fran-Portfolio */
+/* Estilos Personalizados realizados por FranciscoDiazdeVivar */
 /* Usando Bootstrap como base y sin fondo de color.*/
 
 /* 1. Base y Tipografía */
@@ -27,7 +27,7 @@ body {
     left: 0 !important;
     width: 100% !important;
     height: 4px !important; /* Grosor de la línea */
-    /* Gradiente para crear el efecto de rayas con el color primario de Bootstrap */
+    /* Gradiente para crear el efecto de rayas con el color primario de Bootstrap */ 
     background: linear-gradient(to right, 
         #0d6efd 0%, #0d6efd 25%, 
         transparent 25%, transparent 35%,
@@ -39,11 +39,11 @@ body {
 
 /* 3. Estilos Generales y Componentes */
 .navbar {
-    border-bottom: 1px solid #e9ecef !important; /* Línea sutil bajo el header */
+    border-bottom: 1px solid #e9ecef !important; /* Línea fachera bajo el header */
 }
 
 footer {
-    border-top: 1px solid #e9ecef; /* Línea sutil sobre el footer */
+    border-top: 1px solid #e9ecef; /* Línea cool sobre el footer */
     background-color: #f8f9fa !important; 
 }
 
@@ -95,7 +95,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
 
 
         /* ========================================= */
-        /* ESTILOS PERSONALIZADOS PARA SKILLS PAGE */
+        /* ESTILOS PERSONALIZADOS PARA SKILLS PAGE - stack-tecj.html */
         /* ========================================= */
         body {
             font-family: 'Inter', sans-serif !important;
@@ -114,7 +114,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
         }
 
         /* --------------------------------- */
-        /* GRID PRINCIPAL DE HABILIDADES */
+        /* GRID PRINCIPAL DE HABILIDADES SKILLS PAGE - stack-tecj.html*/
         /* --------------------------------- */
         .skills-grid {
             display: grid;
@@ -123,12 +123,11 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
         }
         @media (min-width: 992px) {
             .skills-grid {
-                /* Distribución de columnas: 2 partes (Reciente), 1.5 partes (4 Años), 1 parte (Base) */
                 grid-template-columns: 2fr 1.5fr 1fr;
             }
         }
         .skill-column {
-            background-color: #f8f9fa; /* Fondo gris claro */
+            background-color: #f8f9fa; 
             padding: 1.5rem;
             border-radius: 1rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -142,7 +141,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
 
 
         /* --------------------------------- */
-        /* 1. FOCO ACTUAL (TARJETAS FLEX) */
+        /* 1. FOCO ACTUAL (TARJETAS FLEX) SKILLS PAGE - stack-tecj.html*/
         /* --------------------------------- */
         .skill-list-flex {
             display: flex;
@@ -156,7 +155,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
             border: 1px solid #dee2e6;
             border-radius: 0.75rem;
             background-color: #ffffff;
-            flex: 1 1 calc(50% - 0.5rem); /* Dos tarjetas por fila en pantallas medianas */
+            flex: 1 1 calc(50% - 0.5rem); 
             min-width: 150px;
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -182,7 +181,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
         }
 
         /* --------------------------------- */
-        /* 2. EXPERIENCIA RECIENTE (GRID 2xN) */
+        /* 2. EXPERIENCIA RECIENTE (GRID) SKILLS PAGE - stack-tecj.html*/
         /* --------------------------------- */
         .skill-list-grid-2x {
             display: grid;
@@ -193,7 +192,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
             text-align: center;
             padding: 1rem 0.5rem;
             border-radius: 0.5rem;
-            background-color: #e9ecef; /* Un gris más oscuro para destacar */
+            background-color: #e9ecef; 
             font-size: 0.9rem;
             font-weight: 500;
             transition: background-color 0.2s;
@@ -204,7 +203,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
         }
 
         /* --------------------------------- */
-        /* 3. BASE PROFESIONAL (TAGS) */
+        /* 3. BASE PROFESIONAL (TAGS) SKILLS PAGE - stack-tecj.html */
         /* --------------------------------- */
         .skill-tags-flex {
             display: flex;
@@ -212,7 +211,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
             gap: 0.5rem;
         }
         .skill-tag {
-            background-color: #6c757d; /* Gris oscuro para representar 'base' */
+            background-color: #6c757d; 
             color: white;
             padding: 0.4rem 0.8rem;
             border-radius: 9999px;
@@ -220,3 +219,90 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
             font-weight: 500;
         }
         
+
+/* ------------------------------------------- */
+/* Estilos Globales y de Componentes - todas las paginas */
+/* ------------------------------------------- */
+
+/* Clase para el efecto de título con raya (Raya a ambos lados del texto) */
+.main-heading-striped {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.75rem; 
+    margin-bottom: 1.5rem;
+    font-weight: 600; 
+}
+
+/* elemento para la raya izquierda */
+.main-heading-striped::before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #0d6efd; 
+    margin-right: 15px;
+}
+
+/* elemento para la raya derecha */
+.main-heading-striped::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #0d6efd; 
+    margin-left: 15px;
+}
+
+/* Estilos de la navegación para consistencia visual */
+.nav-link {
+    color: #212529; 
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0d6efd; 
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #0d6efd !important;
+}
+
+/* ------------------------------------------- */
+/* Grilla de clientes y colaboradores clientes.html*/
+/* ------------------------------------------- */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Uso de Inter Font y estilo para el fondo personalizado */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .fondo-clientes {
+            background-color: #f7f7f7;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo para los logos en el acordeón */
+        .accordion-button {
+            background-color: #e9ecef !important;
+        }
+
+        /* Centrar contenido dentro del header del acordeón */
+        .accordion-button .mx-auto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .dropdown-item img {
+            margin-right: 8px;
+        }
+        
+        /* Estilos para el footer */
+        footer {
+            background-color: #e9ecef !important;
+            border-top: 1px solid #dee2e6;
+        }

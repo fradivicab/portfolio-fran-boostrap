@@ -13,12 +13,12 @@
 </head>
 <body>
     <!--El header-->
-    <header class="container-fluid">
+    <header class="container-fluid shadow-sm">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                <!-- Ícono de Casa (Home) -->
                 <a class="navbar-brand" href="../index.html">
-                    <!-- Icono de Casa (Home) -->
-                    <img src="https://placehold.co/35x35/007bff/ffffff?text=H" alt="Home icon" width="35" height="35" class="rounded">
+                    <img src="https://placehold.co/35x35/007bff/ffffff?text=H" alt="Home icon" width="35" height="35" class="rounded-full">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -28,30 +28,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/trabajar.html">Trabajar</a>
+                            <a class="nav-link" href="../pages/trabajar.html">Trabajar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/acercade.html">Acerca de</a>
+                            <a class="nav-link" href="../pages/acercade.html">Acerca de</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/clientes.html">Clientes</a>
+                            <!-- Clase 'active' para la página actual -->
+                            <a class="nav-link" href="clientes.html">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/stack-tech.html">Stack-tecnologico</a>
+                            <a class="nav-link active" aria-current="page" href="stack-tech.html">Stack-tecnologico</a>
                         </li>
                     </ul>
 
+                    <!-- Redes Sociales y WhatsApp -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Mis redes
                             </a>
-                            <ul class="dropdown-menu">
-                                <!--íconos con placeholders para garantizar que se vean -->
+                            <ul class="dropdown-menu dropdown-menu-end shadow-lg rounded-lg">
+                                <!--Íconos con placeholders -->
                                 <li><a class="dropdown-item"
                                         href="https://www.linkedin.com/in/francisco-diaz-de-vivar-77b11b10a/"
                                         target="_blank">
@@ -67,9 +69,9 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="https://wa.me/595975443333" target="_blank">
+                            <a class="nav-link" href="https://wa.me/595975443333" target="_blank" aria-label="WhatsApp">
                                 <img src="https://placehold.co/35x35/25d366/ffffff?text=WA" alt="whatsapp msg" width="35"
-                                    height="35" class="rounded">
+                                    height="35" class="rounded-full">
                             </a>
                         </li>
                     </ul>
@@ -208,11 +210,11 @@
 </main>
 
     <!--El Footer -->
-    <footer class="text-black text-center py-3 mt-auto bg-body-tertiary">
+    <footer class="text-black text-center py-3 bg-body-tertiary">
         <div class="container">
-            <p class="mb-0">También podés contactarme al correo <a href="mailto:fradivicab@gmail.com" class="text-black"
-                    target="">fradivicab@gmail.com</a></p>
-            <p class="mb-0">&copy; 2025 FranDDV-Portfolio. Todos los derechos reservados.</p>
+            <p class="mb-1">También puedes contactarme al correo <a href="mailto:fradivicab@gmail.com" class="text-black fw-bold text-decoration-none"
+                    target="_blank">fradivicab@gmail.com</a></p>
+            <p class="mb-0 small">&copy; 2025 FranDDV-Portfolio. Todos los derechos reservados.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
