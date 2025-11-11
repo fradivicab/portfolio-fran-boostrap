@@ -1,26 +1,58 @@
-/*-----------------------------------------------------------------
-1. Colores de los mains de todas las paginas y arreglos varios
--------------------------------------------------------------------*/
+/* Estilos Personalizados para Fran-Portfolio */
+/* Usando Bootstrap como base y sin fondo de color.*/
 
-.fondo-home {
-    /* Color para index.html */
-    background-color: #e6f5ff !important; 
+/* 1. Base y Tipografía */
+body {
+    /* Fondo transparente/blanco por solicitud del usuario */
+    background-color: transparent !important;
+    /* Fuente */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    color: #333; /* Texto oscuro para buena legibilidad */
 }
 
-.fondo-trabajar {
-    /* Color para trabajar.html */
-    background-color: #ffcef0 !important;
+/* 2. Estilo de Encabezado con Rayas (Subrayado Estriado) */
+.main-heading-striped {
+    position: relative !important;
+    padding-bottom: 0.5rem !important; 
+    display: inline-block !important; 
+    margin-bottom: 2rem !important;
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
 }
 
-.fondo-acercade {
-    /* Color para acercade.html */
-    background-color: #fff3db !important;
+.main-heading-striped::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 4px !important; /* Grosor de la línea */
+    /* Gradiente para crear el efecto de rayas con el color primario de Bootstrap */
+    background: linear-gradient(to right, 
+        #0d6efd 0%, #0d6efd 25%, 
+        transparent 25%, transparent 35%,
+        #0d6efd 35%, #0d6efd 65%,
+        transparent 65%, transparent 75%,
+        #0d6efd 75%, #0d6efd 100%
+    ) !important;
 }
 
-.fondo-clientes {
-    /* Color para clientes.html */
-    background-color: #ffffff !important;
+/* 3. Estilos Generales y Componentes */
+.navbar {
+    border-bottom: 1px solid #e9ecef !important; /* Línea sutil bajo el header */
 }
+
+footer {
+    border-top: 1px solid #e9ecef; /* Línea sutil sobre el footer */
+    background-color: #f8f9fa !important; 
+}
+
+/* Para asegurar que los h1/h2 no tengan márgenes internos extraños en el main */
+main h1, main h2 {
+    margin-top: 0 !important;
+}
+
+
 /*----------------------------------------------*/
 
 /*Color de fondo de los H1*/
@@ -61,64 +93,130 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
     z-index: 2; 
 }
 
-/*-----------------------------------------------------
-Esta seccion es para superponer imagen con un texto
-------------------------------------------------------*/
 
-#vectoradm {
-    width: 120%; 
-    height: auto; 
-    display: block; 
-    margin-left: -15%;    
-    position: relative; 
-    z-index: 1; 
-}
+        /* ========================================= */
+        /* ESTILOS PERSONALIZADOS PARA SKILLS PAGE */
+        /* ========================================= */
+        body {
+            font-family: 'Inter', sans-serif !important;
+        }
+        .fondo-stack {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            border-bottom: 3px solid #007bff !important; /* Tono azul para destacar el header */
+        }
+        .page-header h1 {
+            color: #007bff;
+            font-weight: 700;
+        }
 
-#row #col1 {
-    position: relative; 
-    z-index: 3; 
+        /* --------------------------------- */
+        /* GRID PRINCIPAL DE HABILIDADES */
+        /* --------------------------------- */
+        .skills-grid {
+            display: grid;
+            gap: 1.5rem;
+            padding: 1rem 0;
+        }
+        @media (min-width: 992px) {
+            .skills-grid {
+                /* Distribución de columnas: 2 partes (Reciente), 1.5 partes (4 Años), 1 parte (Base) */
+                grid-template-columns: 2fr 1.5fr 1fr;
+            }
+        }
+        .skill-column {
+            background-color: #f8f9fa; /* Fondo gris claro */
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .skill-column h3 {
+            border-bottom: 2px solid #ced4da;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
 
-}
 
-/*
- * ----------------------------------------
- * 2. Media Query para Móviles Muy Pequeños (<= 480px)
- * ----------------------------------------
-*/
+        /* --------------------------------- */
+        /* 1. FOCO ACTUAL (TARJETAS FLEX) */
+        /* --------------------------------- */
+        .skill-list-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill-card {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.75rem;
+            background-color: #ffffff;
+            flex: 1 1 calc(50% - 0.5rem); /* Dos tarjetas por fila en pantallas medianas */
+            min-width: 150px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .skill-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        .skill-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.1rem;
+            font-weight: 600;
+        }
+        .skill-card p {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+            color: #6c757d;
+        }
 
-@media (max-width: 480px) {
+        /* --------------------------------- */
+        /* 2. EXPERIENCIA RECIENTE (GRID 2xN) */
+        /* --------------------------------- */
+        .skill-list-grid-2x {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.75rem;
+        }
+        .skill-item-small {
+            text-align: center;
+            padding: 1rem 0.5rem;
+            border-radius: 0.5rem;
+            background-color: #e9ecef; /* Un gris más oscuro para destacar */
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            cursor: default;
+        }
+        .skill-item-small:hover {
+            background-color: #ced4da;
+        }
 
-    /* Reducción de Fuente para Títulos */
-    /* H1 */
-    main h1 {
-        font-size: 2.2rem; 
-        line-height: 1.2;
-    }
-    
-    /* H2 y H3 */
-    main h2 {
-        font-size: 1.5rem; 
-    }
-    main h3 {
-        font-size: 1rem; 
-    }
-
-    /* Ajustar el padding y margin en el móvil */
-    main.container.mt-5 {
-        margin-top: 2rem !important;
-    }
-    
-    /* Centrar la imagen del gatito */
-    .row .col img {
-        max-width: 90%; 
-        height: auto;
-        display: block;
-        margin: 1rem auto;
-    }
-    
-    /* Texto del primer bloque apile correctamente */
-    .container .row .col {
-        padding: 0 1rem;
-        margin-bottom: 1rem;
-    }
-}
+        /* --------------------------------- */
+        /* 3. BASE PROFESIONAL (TAGS) */
+        /* --------------------------------- */
+        .skill-tags-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background-color: #6c757d; /* Gris oscuro para representar 'base' */
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
