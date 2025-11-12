@@ -29,11 +29,11 @@ body {
     height: 4px !important; /* Grosor de la línea */
     /* Gradiente para crear el efecto de rayas con el color primario de Bootstrap */ 
     background: linear-gradient(to right, 
-        #0d6efd 0%, #0d6efd 25%, 
+        #316ac0 0%, #316ac0 25%, 
         transparent 25%, transparent 35%,
-        #0d6efd 35%, #0d6efd 65%,
+        #316ac0 35%, #316ac0 65%,
         transparent 65%, transparent 75%,
-        #0d6efd 75%, #0d6efd 100%
+        #316ac0 75%, #316ac0 100%
     ) !important;
 }
 
@@ -63,6 +63,11 @@ h1 {
 h2 {
         color: #10435ab0 !important;
 
+}
+
+
+.text-fran-color {
+    color: #316ac0 !important; 
 }
 /*----------------------------------------------*/
 
@@ -95,7 +100,8 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
 
 
         /* ========================================= */
-        /* ESTILOS PERSONALIZADOS PARA SKILLS PAGE - stack-tecj.html */
+        /* ESTILOS PERSONALIZADOS PARA SKILLS PAGE - stack-tecj.html*/
+        /*Uso de flexbox, flex, grid y medias queries*/
         /* ========================================= */
         body {
             font-family: 'Inter', sans-serif !important;
@@ -106,10 +112,10 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
             flex-direction: column;
         }
         .navbar {
-            border-bottom: 3px solid #007bff !important; /* Tono azul para destacar el header */
+            border-bottom: 3px solid #316ac0 !important; /* Tono azul para destacar el header */
         }
         .page-header h1 {
-            color: #007bff;
+            color: #316ac0;
             font-weight: 700;
         }
 
@@ -239,7 +245,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
     content: '';
     flex-grow: 1;
     height: 1px;
-    background: #0d6efd; 
+    background: #316ac0; 
     margin-right: 15px;
 }
 
@@ -248,7 +254,7 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
     content: '';
     flex-grow: 1;
     height: 1px;
-    background: #0d6efd; 
+    background: #316ac0; 
     margin-left: 15px;
 }
 
@@ -259,12 +265,12 @@ Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
 }
 
 .nav-link:hover {
-    color: #0d6efd; 
+    color: #316ac0; 
 }
 
 .nav-link.active {
     font-weight: bold;
-    color: #0d6efd !important;
+    color: #316ac0 !important;
 }
 
 /* ------------------------------------------- */
