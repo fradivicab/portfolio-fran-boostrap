@@ -1,0 +1,87 @@
+
+/* ------------------------------------------- */
+/* Estilos Globales y de Componentes - todas las paginas */
+/* ------------------------------------------- */
+
+/* Clase para el efecto de título con raya (Raya a ambos lados del texto) */
+.main-heading-striped {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.75rem; 
+    margin-bottom: 1.5rem;
+    font-weight: 600; 
+}
+
+/* elemento para la raya izquierda */
+.main-heading-striped::before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #316ac0; 
+    margin-right: 15px;
+}
+
+/* elemento para la raya derecha */
+.main-heading-striped::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #316ac0; 
+    margin-left: 15px;
+}
+
+/* Estilos de la navegación para consistencia visual */
+.nav-link {
+    color: #212529; 
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #316ac0; 
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #316ac0 !important;
+}
+
+/* ------------------------------------------- */
+/* Grilla de clientes y colaboradores clientes.html*/
+/* ------------------------------------------- */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Uso de Inter Font y estilo para el fondo personalizado */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .fondo-clientes {
+            background-color: #f7f7f7;
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo para los logos en el acordeón */
+        .accordion-button {
+            background-color: #e9ecef !important;
+        }
+
+        /* Centrar contenido dentro del header del acordeón */
+        .accordion-button .mx-auto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .dropdown-item img {
+            margin-right: 8px;
+        }
+        
+        /* Estilos para el footer */
+        footer {
+            background-color: #e9ecef !important;
+            border-top: 1px solid #dee2e6;
+        }
