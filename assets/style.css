@@ -5,11 +5,7 @@
 /* Clase para el efecto de título con raya (Raya a ambos lados del texto) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 /*Mapa colores primarios y secundarios para header*/
-/* 2. Estilo de Encabezado (Subrayado Estriado) */
-header {
-  position: fixed;
-}
-
+/* 2. Estilo de Encabezado (Gradiente) */
 header .navbar {
   background: #fafafa;
   background: linear-gradient(358deg, rgb(250, 250, 250) 0%, rgb(176, 205, 245) 100%, rgb(49, 106, 192) 100%);
