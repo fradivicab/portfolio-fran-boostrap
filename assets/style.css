@@ -8,7 +8,7 @@
 /* 2. Estilo de Encabezado (Gradiente) */
 header .navbar {
   background: #fafafa;
-  background: linear-gradient(358deg, rgb(250, 250, 250) 0%, rgb(176, 205, 245) 100%, rgb(49, 106, 192) 100%);
+  background: linear-gradient(0deg, rgb(250, 250, 250) 63%, rgb(176, 205, 245) 100%, rgb(49, 106, 192) 100%);
 }
 
 /* Estilos Personalizados realizados por FranciscoDiazdeVivar */
@@ -316,6 +316,21 @@ body {
 footer {
   background-color: #e9ecef !important;
   border-top: 1px solid #dee2e6;
+}
+
+/*Animaciones de imagenes en el main*/
+.oculto-inicial {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#gatito1 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: rotateInUpRight;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */
