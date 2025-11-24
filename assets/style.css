@@ -20,6 +20,7 @@ body {
   /* Fuente */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   color: #333; /* Texto oscuro para buena legibilidad */
+  background: #111;
 }
 
 /* 2. Estilo de Encabezado con Rayas (Subrayado Estriado) */

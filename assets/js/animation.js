@@ -1,3 +1,5 @@
+//Gatito del main en la ultima parte del index, que anime solo cuando lo veamos.
+
 // 1. Obtener el elemento que queremos observar
 const gatito2 = document.getElementById('gatito2');
 
