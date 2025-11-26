@@ -3,6 +3,13 @@
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato se basa en "Keep a Changelog", y este proyecto adhiere al versionado semántico.
 
+## [Desarrollo - coderh-4] - 2025-11-26
+
+### Añadido (Added)
+- ADD archivos a ignorar en el gitignore
+- Animaciones con elementos imagenes en el main y en stacktecnologico
+- Gradiente al header
+
 ## [Desarrollo - coderh-4] - 2025-11-11
 
 ### Corregido (Fixed)

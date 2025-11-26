@@ -1,0 +1,18 @@
+/*Animaciones de imagenes en el main*/
+
+.oculto-inicial {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#gatito1 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: rotateInUpRight;
+    animation-duration: 1s;
+    animation-delay: 0.5s; 
+    animation-timing-function: ease-out;
+}
+
+
+

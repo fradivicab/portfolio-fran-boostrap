@@ -1,0 +1,91 @@
+
+/* 3. Estilos Generales y Componentes */
+.navbar {
+    border-bottom: 1px solid #e9ecef !important; /* Línea fachera bajo el header */
+}
+
+footer {
+    border-top: 1px solid #e9ecef; /* Línea cool sobre el footer */
+    background-color: #f8f9fa !important; 
+}
+
+/* Para asegurar que los h1/h2 no tengan márgenes internos extraños en el main */
+main h1, main h2 {
+    margin-top: 0 !important;
+}
+
+
+/*----------------------------------------------*/
+
+/*Color de fondo de los H1*/
+h1 {
+    color: #1f3b5fa1 !important;
+}
+
+h2 {
+        color: #10435ab0 !important;
+
+}
+
+
+.text-fran-color {
+    color: #316ac0 !important; 
+}
+/*----------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
+-------------------------------------------------------------------------------*/
+#superpocision {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+}
+
+#rayas {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+#Gatitonro3 {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    z-index: 2; 
+}
+
+
+        /* ========================================= */
+        /* ESTILOS PERSONALIZADOS PARA SKILLS PAGE - stack-tecj.html*/
+        /*Uso de flexbox, flex, grid y medias queries*/
+        /* ========================================= */
+        body {
+            font-family: 'Inter', sans-serif !important;
+        }
+        .fondo-stack {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            border-bottom: 3px solid #316ac0 !important; /* Tono azul para destacar el header */
+        }
+        .page-header h1 {
+            color: #316ac0;
+            font-weight: 700;
+        }
+
+        /* --------------------------------- */
+        /* GRID PRINCIPAL DE HABILIDADES SKILLS PAGE - stack-tecj.html*/
+        /* --------------------------------- */
+        .skills-grid {
+            display: grid;
+            gap: 1.5rem;
+            padding: 1rem 0;
+        }

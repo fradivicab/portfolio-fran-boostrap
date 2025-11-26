@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* ------------------------------------------- */
+/* Estilos Globales y de Componentes - todas las paginas */
+/* ------------------------------------------- */
+/* Clase para el efecto de título con raya (Raya a ambos lados del texto) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/*Mapa colores primarios y secundarios para header*/
+/* 2. Estilo de Encabezado (Gradiente) */
+header .navbar {
+  background: #fafafa;
+  background: linear-gradient(0deg, rgb(250, 250, 250) 50%, rgba(176, 205, 245, 0.93) 75%, rgb(49, 106, 192) 89%);
+}
+
+/* Estilos Personalizados realizados por FranciscoDiazdeVivar */
+/* Usando Bootstrap como base y sin fondo de color.*/
+/* 1. Base y Tipografía */
+body {
+  /* Fondo transparente/blanco por solicitud del usuario */
+  background-color: transparent !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  color: #333; /* Texto oscuro para buena legibilidad */
+  background: #111;
+}
+
+/* 2. Estilo de Encabezado con Rayas (Subrayado Estriado) */
+.main-heading-striped {
+  position: relative !important;
+  padding-bottom: 0.5rem !important;
+  display: inline-block !important;
+  margin-bottom: 2rem !important;
+  font-size: 2.25rem !important;
+  font-weight: 700 !important;
+}
+
+.main-heading-striped::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 4px !important; /* Grosor de la línea */
+  /* Gradiente para crear el efecto de rayas con el color primario de Bootstrap */
+  background: linear-gradient(to right, #316ac0 0%, #316ac0 25%, transparent 25%, transparent 35%, #316ac0 35%, #316ac0 65%, transparent 65%, transparent 75%, #316ac0 75%, #316ac0 100%) !important;
+}
+
+/* 3. Estilos Generales y Componentes */
+.navbar {
+  border-bottom: 1px solid #e9ecef !important; /* Línea fachera bajo el header */
+}
+
+footer {
+  border-top: 1px solid #e9ecef; /* Línea cool sobre el footer */
+  background-color: #f8f9fa !important;
+}
+
+/* Para asegurar que los h1/h2 no tengan márgenes internos extraños en el main */
+main h1, main h2 {
+  margin-top: 0 !important;
+}
+
+/*----------------------------------------------*/
+/*Color de fondo de los H1*/
+h1 {
+  color: rgba(31, 59, 95, 0.631372549) !important;
+}
+
+h2 {
+  color: rgba(16, 67, 90, 0.6901960784) !important;
+}
+
+.text-fran-color {
+  color: #316ac0 !important;
+}
+
+/*----------------------------------------------*/
+/*------------------------------------------------------------------------------
+Esta seccion es para cambiar el color de una imagen vector que sirve de fondo
+-------------------------------------------------------------------------------*/
+#superpocision {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+#rayas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#Gatitonro3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  z-index: 2;
+}
+
+/* ========================================= */
+/* ESTILOS PERSONALIZADOS PARA SKILLS PAGE - stack-tecj.html*/
+/*Uso de flexbox, flex, grid y medias queries*/
+/* ========================================= */
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+.fondo-stack {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  border-bottom: 3px solid #316ac0 !important; /* Tono azul para destacar el header */
+}
+
+.page-header h1 {
+  color: #316ac0;
+  font-weight: 700;
+}
+
+/* --------------------------------- */
+/* GRID PRINCIPAL DE HABILIDADES SKILLS PAGE - stack-tecj.html*/
+/* --------------------------------- */
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .skills-grid {
+    grid-template-columns: 2fr 1.5fr 1fr;
+  }
+}
+.skill-column {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-column h3 {
+  border-bottom: 2px solid #ced4da;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* --------------------------------- */
+/* 1. FOCO ACTUAL (TARJETAS FLEX) SKILLS PAGE - stack-tecj.html*/
+/* --------------------------------- */
+.skill-list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 150px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.skill-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+
+.skill-card p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  color: #6c757d;
+}
+
+/* --------------------------------- */
+/* 2. EXPERIENCIA RECIENTE (GRID) SKILLS PAGE - stack-tecj.html*/
+/* --------------------------------- */
+.skill-list-grid-2x {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+}
+
+.skill-item-small {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #e9ecef;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  cursor: default;
+}
+
+.skill-item-small:hover {
+  background-color: #ced4da;
+}
+
+/* --------------------------------- */
+/* 3. BASE PROFESIONAL (TAGS) SKILLS PAGE - stack-tecj.html */
+/* --------------------------------- */
+.skill-tags-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.main-heading-striped {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* elemento para la raya izquierda */
+.main-heading-striped::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #316ac0;
+  margin-right: 15px;
+}
+
+/* elemento para la raya derecha */
+.main-heading-striped::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #316ac0;
+  margin-left: 15px;
+}
+
+/* Estilos de la navegación para consistencia visual */
+.nav-link {
+  color: #212529;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #316ac0;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #316ac0 !important;
+}
+
+/* ------------------------------------------- */
+/* Grilla de clientes y colaboradores clientes.html*/
+/* ------------------------------------------- */
+/* Uso de Inter Font y estilo para el fondo personalizado */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.fondo-clientes {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para los logos en el acordeón */
+.accordion-button {
+  background-color: #e9ecef !important;
+}
+
+/* Centrar contenido dentro del header del acordeón */
+.accordion-button .mx-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-item img {
+  margin-right: 8px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #e9ecef !important;
+  border-top: 1px solid #dee2e6;
+}
+
+/*Animaciones de imagenes en el main*/
+.oculto-inicial {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#gatito1 {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: rotateInUpRight;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+}/*# sourceMappingURL=style.css.map */

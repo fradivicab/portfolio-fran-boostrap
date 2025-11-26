@@ -1,0 +1,43 @@
+# =======================================================
+# Archivos ignorados automáticamente por IDEs y Build Tools
+# =======================================================
+
+# -------------------------------------------------------
+# 1. Visual Studio / Visual Studio Code
+# -------------------------------------------------------
+*.sln.docstates
+*.vshost.*
+*.user
+*.suo
+*.pdb
+*.obj
+*.exe
+*.dll
+
+# Carpetas comunes de compilación
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Tt]emp/
+
+# NuGet y VS Code
+**/packages/
+**/project.lock.json
+.vscode/
+
+
+# -------------------------------------------------------
+# 2. JetBrains IDEs (IntelliJ IDEA, PyCharm, WebStorm, etc.)
+# -------------------------------------------------------
+# Carpeta de configuración del proyecto de JetBrains
+.idea/
+
+# Archivos de la sesión y caché
+*.iml
+*.iws
+*.ipr
+*.class
+out/
+build/
+.settings/

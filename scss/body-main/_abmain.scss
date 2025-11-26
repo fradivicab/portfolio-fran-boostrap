@@ -1,0 +1,26 @@
+/* 2. Estilo de Encabezado con Rayas (Subrayado Estriado) */
+.main-heading-striped {
+    position: relative !important;
+    padding-bottom: 0.5rem !important; 
+    display: inline-block !important; 
+    margin-bottom: 2rem !important;
+    font-size: 2.25rem !important;
+    font-weight: 700 !important;
+}
+
+.main-heading-striped::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 4px !important; /* Grosor de la línea */
+    /* Gradiente para crear el efecto de rayas con el color primario de Bootstrap */ 
+    background: linear-gradient(to right, 
+        #316ac0 0%, #316ac0 25%, 
+        transparent 25%, transparent 35%,
+        #316ac0 35%, #316ac0 65%,
+        transparent 65%, transparent 75%,
+        #316ac0 75%, #316ac0 100%
+    ) !important;
+}
