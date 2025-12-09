@@ -3,6 +3,14 @@
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato se basa en "Keep a Changelog", y este proyecto adhiere al versionado semántico.
 
+## [Desarrollo - coderh-8] - 2025-12-09
+
+### Añadido (Added)
+- ADD archivos a ignorar en el gitignore (node)
+- Modificacion de imagenes a formato webp
+- ADD de metadatos
+
+
 ## [Desarrollo - coderh-4] - 2025-11-26
 
 ### Añadido (Added)
