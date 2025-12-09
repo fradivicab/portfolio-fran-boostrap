@@ -1,4 +1,6 @@
-//Gatito del main en la ultima parte del index, que anime solo cuando lo veamos.
+// =========================================================
+// 1. LÓGICA DEL INTERSECTION OBSERVER (Gatito)
+// =========================================================
 
 // 1. Obtener el elemento que queremos observar
 const gatito2 = document.getElementById('gatito2');
@@ -26,7 +28,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             // 3. Forzar el reflujo del navegador (CRÍTICO)
             void entry.target.offsetWidth; 
 
-            // 4. Añadir las clases de animación. Esto dispara la animación AHORA. rotateInDownRight
+            // 4. Añadir las clases de animación.
             entry.target.classList.add('animate__animated', 'animate__rotateInDownRight');
             
             // 5. Detener la observación

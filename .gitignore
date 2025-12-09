@@ -21,10 +21,11 @@
 [Oo]bj/
 [Tt]emp/
 
-# NuGet y VS Code
+# NuGet, VS Code y node
 **/packages/
 **/project.lock.json
 .vscode/
+.node_modules/*
 
 
 # -------------------------------------------------------
